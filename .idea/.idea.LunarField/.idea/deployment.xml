@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="lunar_server" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="lunar_server">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../../../../../../Program Files/dotnet/sdk/6.0.100/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_6_default.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField.sln" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Controllers/HomeController.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/LunarField.csproj" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Models/ErrorViewModel.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Program.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Properties/launchSettings.json" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/Home/Index.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/Home/Index.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/Home/Privacy.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/Home/Privacy.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/Shared/Error.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/Shared/Error.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/Shared/_Layout.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/Shared/_Layout.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/Shared/_Layout.cshtml.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/Shared/_ValidationScriptsPartial.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/Shared/_ValidationScriptsPartial.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/_ViewImports.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/_ViewImports.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/_ViewStart.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/Views/_ViewStart.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/appsettings.Development.json" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/appsettings.json" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/obj/Debug/net6.0/LunarField.AssemblyInfo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/obj/Debug/net6.0/LunarField.GeneratedMSBuildEditorConfig.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/obj/Debug/net6.0/LunarField.GlobalUsings.g.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/obj/Debug/net6.0/LunarField.RazorAssemblyInfo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/css/site.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/favicon.ico" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/images/Group 1.svg" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/images/image 1.svg" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/js/site.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/LICENSE" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/js/bootstrap.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/jquery-validation/LICENSE.md" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/jquery-validation/dist/additional-methods.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/jquery-validation/dist/jquery.validate.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/jquery/LICENSE.txt" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/jquery/dist/jquery.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/jquery/dist/jquery.min.js" web="/" />
+            <mapping local="$PROJECT_DIR$/LunarField/wwwroot/lib/jquery/dist/jquery.min.map" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

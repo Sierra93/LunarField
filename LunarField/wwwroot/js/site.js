@@ -1,4 +1,29 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿function createUser() {
+    console.log("createUser");
 
-// Write your JavaScript code.
+    // var userInput = {
+    //     UserLogin: document.getElementById("idUserLogin").value,
+    //     FullName: document.getElementById("idFullName").value,
+    //     DateYear: document.getElementById("idDateYear").value,
+    //     UserPassword: document.getElementById("idUserPassword").value
+    // };
+
+    return $.ajax({
+        url: '/User/CreateUser',
+        type: "POST",
+        dataType: "json",
+        data: {
+            UserLogin: document.getElementById("idUserLogin").value,
+            FullName: document.getElementById("idFullName").value,
+            DateYear: document.getElementById("idDateYear").value,
+            UserPassword: document.getElementById("idUserPassword").value
+        },
+        success: (response) => {
+            alert("Регистрация прошла успешно!");
+        },
+        
+        error: (XMLHttpRequest, textStatus, errorThrown) => {
+            console.log("Ошибка регистрации");
+        }
+    });
+}

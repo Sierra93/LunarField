@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "LunarField: Регистрация";
+    Layout = "_Layout";
+}
+
+<div>
+    <p>
+        <label>Логин</label><br/>
+        <input id="idUserLogin" type="text" name="UserLogin"/>
+    </p>
+
+    <p>
+        <label>Пароль:</label><br/>
+        <input id="idUserPassword" type="text" name="Time"/>
+    </p>
+
+    <p>
+        <label>Дата рождения</label><br/>
+        <input id="idDateYear" type="date" name="DateYear"/>
+    </p>
+
+    <p>
+        <label>ФИО:</label><br/>
+        <input id="idFullName" type="text" name="FullName"/>
+    </p>
+
+    <p>
+        <input type="submit" value="Отправить" onclick="createUser()"/>
+    </p>
+</div>
