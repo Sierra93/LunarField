@@ -1,0 +1,113 @@
+﻿@model IEnumerable<LunarField.Models.User.ProfileDataOutput>
+
+@{
+    ViewBag.Title = "LunarField: Профиль";
+    Layout = "_Layout";
+}
+
+<div class="d-flex">
+    <div class="col-lg-4">
+        @{var i = 0;}
+
+        @foreach (var item in Model)
+        {
+            if (i > 0)
+            {
+                continue;
+            }
+
+            <div>
+                <img id="idBlockUserImage" class="avatar" src="@Url.Content(item.UserIcon.Replace("wwwroot", "~"))" alt=""/>
+            </div>
+
+            <div class="mt-3">
+                <div>
+                    @using (Html.BeginForm("SaveUserAvatar", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        <table style="border: solid thin; margin: 10px 10px 10px 10px">
+                            <tr style="margin-top: 10px">
+                                <td class="d-flex">
+                                    <input id="userlogin" type="text" name="UserLogin" hidden="true">
+                                    <input type="file" name="myfile">
+                                    
+                                    <input type="submit" class="btn-blue-2" value="Изменить аватарку"/>
+                                </td>
+                            </tr>
+                        </table>
+                    }
+                </div>
+            </div>
+
+            <div style="color: white">
+                Гамбург Григорий Юрьевич
+            </div>
+
+            <div style="color: white">
+                Специальность: Имитация деятельности
+            </div>
+        }
+    </div>
+
+    <div class="col-lg-8">
+        <div class="mb-3">
+            <input id="color" type="text">
+            <input id="userlogin4" type="text" name="UserLogin" hidden="true">
+            <input type="submit" class="btn-blue-2" value="Изменить фон профиля" onclick="onSaveProfileColor()"/>
+        </div>
+
+        <div>
+            @using (Html.BeginForm("SaveUserInfo", "User", FormMethod.Post))
+            {
+                <textarea id="idProfileInfo" class="profile-info" name="UserInfo" placeholder="Расскажите о себе здесь.">
+             @{var i2 = 0;}
+             
+             @foreach (var item in Model)
+             {
+                 if (i2 > 0)
+                 {
+                     continue;
+                 }
+
+                 @item.ProfileUserInfo
+             }
+            </textarea>
+                <p>
+                    <input id="userlogin3" type="text" name="UserLogin" hidden="true">
+                    <input type="submit" class="btn-blue-2" value="Сохранить"/>
+                </p>
+            }
+        </div>
+
+        <div class="portfolio-block">
+            <div class="portfolio-item">
+                @foreach (var item in Model)
+                {
+                    <div>
+                        <img class="portfolio-img" src="@Url.Content(item.ProjectUrl.Replace("wwwroot", "~"))" alt=""/>
+                    </div>
+
+                    <div class="project-content">
+                        @item.ProjectTitle
+                    </div>
+
+                  
+                                                                                               
+                }
+            </div>
+
+            @using (Html.BeginForm("SavePortfolioProject", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <table style="border: solid thin; margin: 10px 10px 10px 10px">
+                    <tr style="margin-top: 10px">
+                        <td>
+                            <input type="file" name="myfile2">
+                            <input id="userlogin2" type="text" name="UserLogin" hidden="true">
+                            <input type="text" name="ProjectName"/>
+                            <input type="submit" class="btn-blue-2" value="Добавить проект"/>
+                        </td>
+                    </tr>
+                </table>
+            }
+        </div>
+    </div>
+</div>

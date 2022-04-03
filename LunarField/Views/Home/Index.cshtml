@@ -8,17 +8,55 @@
 <link rel="stylesheet" href="~/LunarField.styles.css" asp-append-version="true"/>
 
 <div class="fon">
-    <img src="~/images/image 1.svg"></img>
-    <div>TEST</div>
+    <img src="~/images/image 1.svg" alt=""/>
+
+    <div class="content pt-5">
+        <div>
+            <img class="content-img" src="~/images/2e6ac967fbeedf95019418235a932709.png" alt=""/>
+            Просто описание работы потрфолио.
+        </div>
+
+        <div class="pt-5">
+            Просто описание работы потрфолио.
+            <img class="content-img img-2" src="~/images/primer-ukit-1001svadba.jpg" alt=""/>
+        </div>
+
+        <div class="pt-5">
+            <img class="content-img" src="~/images/Без названия.jpg" alt=""/>
+            Просто описание работы потрфолио.
+        </div>
+
+        <div class="d-flex justify-content-center pt-5 pb-5">
+            <div>
+                <div>
+                    <input type="button" class="btn btn-default btn-blue" value="Начать работу сейчас" 
+                           onclick="onRouteSignUp()"/>
+                </div>
+                <div class="text-center acc">
+                     <input type="button" class="btn btn-link" value="у меня есть аккаунт" 
+                                               onclick="onRouteSignIn()"/>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="">
+              <img src="~/images/Mask_group.svg" alt="" class="header-fon">
+        </div>
+    </div>
 </div>
 
+
+
 <div class="landing-block-content col-lg-12 text-center">
-    <img src="~/images/Group 1.svg"></img>
+    <img src="~/images/Group 1.svg" alt=""/>
     <p>LunarField</p>
     <p class="landing-block-text">
         Это платформа по созданию идеального персонализированного портфолио для любых целей.
     </p>
 </div>
+
+
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -9,4 +9,10 @@ public class UserInput
     public DateTime DateYear { get; set; }
 
     public string UserPassword { get; set; }
+    
+    public string ProjectName { get; set; }
+
+    public string UserInfo { get; set; }
+
+    public string ProfileColor { get; set; }
 }

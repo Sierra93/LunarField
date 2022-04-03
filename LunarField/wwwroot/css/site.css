@@ -18,7 +18,7 @@ html {
 
 body {
   margin-bottom: 60px;
-  
+  background: black;
 }
 
 .fon {
@@ -43,14 +43,122 @@ body {
 
 .landing-block-text {
   position: absolute;
-  width: 1331px;
-  height: 283px;
-
-  font-family: 'Roboto';
-  font-style: normal;
+  /*width: 1331px;*/
+  /*height: 283px;*/
+  /*font-family: 'Roboto';*/
+  /*font-style: normal;*/
   /*font-weight: 700;*/
-  font-size: 72px;
-  line-height: 84px;
+  /*font-size: 72px;*/
+  /*line-height: 84px;*/
   /*text-align: center;*/
   color: #FFFFFF;
+}
+
+.avatar {
+  /*position: absolute;*/
+  width: 410px;
+  height: 589px;
+  /*background: url(image.png);*/
+  border-radius: 28px;
+}
+
+.profile-info {
+  width: 900px;
+  height: 589px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 39px;
+  padding: 15px;
+}
+
+.portfolio-img {
+  /*position: absolute;*/
+  width: 900px;
+  /*height: 791px;*/
+}
+
+.project-content {
+  background: #C4C4C4;
+  border-radius: 50px;
+  width: 900px;
+  height: 123px;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #000000;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.header {
+  /*background-image: url(images/Mask_group.svg);*/
+  /*background: #54555c  url(images/Mask_group.svg) repeat-x top;*/
+  /*background: url("~/images/image 1.svg");*/
+  /*background*/
+}
+
+.header-line {
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.header-fon {
+  position: absolute;
+  margin-left: -50px;
+  margin-bottom: 51px;
+}
+
+.content {
+  background: #313131;
+  color: white;
+}
+
+.content-img {
+  width: 960px;
+  height: 680px;
+}
+
+.img-2 {
+  margin-left: 182px;
+  width: 960px;
+  height: 680px;
+}
+
+.btn-blue {
+  background: linear-gradient(265.63deg, #0A4CB7 0%, #051BFF 92.38%);
+  border-radius: 43px;
+  width: 601px;
+  height: 50px;
+  color: white;
+}
+
+.btn-blue-2 {
+  background: linear-gradient(265.63deg, #0A4CB7 0%, #051BFF 92.38%);
+  /*border-radius: 43px;*/
+  /*width: 601px;*/
+  /*height: 50px;*/
+  color: white;
+  border: 2px solid #000000;
+}
+
+.acc {
+  color: #0A49BB;
+}
+
+.signup-block {
+  position: absolute;
+}
+
+.field {
+  width: 683px;
+  height: 58px;
+  background: #C4C4C4;
+  border-radius: 24px;
 }

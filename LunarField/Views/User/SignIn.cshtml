@@ -1,8 +1,32 @@
-﻿@* @model Model *@
-
-@{
+﻿@{
     ViewBag.Title = "LunarField: Авторизация";
-    Layout = "_Layout";
+    Layout = null;
 }
 
-test signin
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+<link rel="stylesheet" href="~/LunarField.styles.css" asp-append-version="true"/>
+
+<div class="fon d-flex justify-content-center">
+    <img class="signup-block" src="~/images/image 1.svg" alt=""/>
+    <div class="landing-block-text">
+        <h1>Регистрация</h1>
+        <p>
+            <label>Логин</label><br/>
+            <input id="idUserLogin" type="text" name="UserLogin" class="field"/>
+        </p>
+
+        <p>
+            <label>Пароль:</label><br/>
+            <input id="idUserPassword" type="text" name="Time" class="field"/>
+        </p>
+       
+        <p>
+            <input type="submit" value="Войти" class="btn-blue" onclick="onSignIn()"/>
+        </p>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
