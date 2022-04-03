@@ -100,11 +100,11 @@ function onSaveProfileColor() {
 }
 
 function onRouteSignUp() {
-    window.location.href = "https://testdevi.xyz/User/SignUp";
+    window.location.href = "https://localhost:44379/User/SignUp";
 }
 
 function onRouteSignIn() {
-    window.location.href = "https://testdevi.xyz/User/SignIn";
+    window.location.href = "https://localhost:44379/User/SignIn";
 }
 
 function onSignIn() {
@@ -120,7 +120,7 @@ function onSignIn() {
         success: (response) => {
             if(response.userLogin !== "") {
                 localStorage["userLogin"] = response.userLogin;
-                window.location.href = "https://testdevi.xyz/User/Profile";
+                window.location.href = "https://localhost:44379/User/Profile";
             }
         },
 
@@ -131,10 +131,10 @@ function onSignIn() {
 }
 
 function onRouteStart() {
-    window.location.href = "https://testdevi.xyz";
+    window.location.href = "https://localhost:44379";
 }
 
 function onExit() {
     localStorage.clear();
-    window.location.href = "https://testdevi.xyz";
+    window.location.href = "https://localhost:44379";
 }
