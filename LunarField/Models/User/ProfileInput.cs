@@ -1,8 +1,10 @@
-﻿namespace LunarField.Models.User;
-
-public class ProfileInput
+﻿namespace LunarField.Models.User
 {
-    public string ProjectName { get; set; }
+    public class ProfileInput
+    {
+        public string ProjectName { get; set; }
 
-    public string UserLogin { get; set; }
+        public string UserLogin { get; set; }
+    }
 }
+

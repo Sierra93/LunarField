@@ -1,37 +1,42 @@
 ﻿using LunarField.Abstractions.User;
 using LunarField.Services.User;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace LunarField;
-
-public class Startup
+namespace LunarField
 {
-    public IConfiguration Configuration { get; }
-
-    public Startup(IConfiguration configuration)
+    public class Startup
     {
-        Configuration = configuration;
-    }
+        public IConfiguration Configuration { get; }
 
-    public void ConfigureServices(IServiceCollection services) {
-        services.AddControllersWithViews();
-        services.AddTransient<IUserService, UserService>();
-        services.AddTransient<IUserRepository, UserRepository>();
-    }
-
-    public void Configure(IApplicationBuilder app)
-    {
-        app.UseDeveloperExceptionPage();
-        app.UseHttpsRedirection();
-        app.UseStaticFiles();
-        app.UseHttpsRedirection();
-        app.UseRouting();
-        app.UseAuthentication();
-        app.UseAuthorization();
-
-        app.UseEndpoints(endpoints =>
+        public Startup(IConfiguration configuration)
         {
-            endpoints.MapControllers();
-            endpoints.MapDefaultControllerRoute();
-        });
+            Configuration = configuration;
+        }
+
+        public void ConfigureServices(IServiceCollection services) {
+            services.AddControllersWithViews();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IUserRepository, UserRepository>();
+        }
+
+        public void Configure(IApplicationBuilder app)
+        {
+            app.UseDeveloperExceptionPage();
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseHttpsRedirection();
+            app.UseRouting();
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+                endpoints.MapDefaultControllerRoute();
+            });
+        }
     }
 }
+

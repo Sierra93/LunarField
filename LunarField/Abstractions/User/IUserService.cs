@@ -1,20 +1,26 @@
-﻿using LunarField.Models.User;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using LunarField.Models.User;
+using Microsoft.AspNetCore.Http;
 
-namespace LunarField.Abstractions.User;
-
-public interface IUserService
+namespace LunarField.Abstractions.User
 {
-    Task<UserOutput> CreateUserAsync(string userName, string password, string fullName, DateTime dateYear);
+    public interface IUserService
+    {
+        Task<UserOutput> CreateUserAsync(string userName, string password, string fullName, DateTime dateYear);
 
-    Task<List<ProfileDataOutput>> GetProfileDataAsync(string userName);
+        Task<List<ProfileDataOutput>> GetProfileDataAsync(string userName);
 
-    Task SaveUserAvatarAsync(IFormFileCollection files, string userName);
+        Task SaveUserAvatarAsync(IFormFileCollection files, string userName);
 
-    Task SavePortfolioProjectAsync(IFormFileCollection files, string projectName, string userLogin);
+        Task SavePortfolioProjectAsync(IFormFileCollection files, string projectName, string userLogin);
     
-    Task SaveUserInfoAsync(string userLogin, string userInfo);
+        Task SaveUserInfoAsync(string userLogin, string userInfo);
 
-    Task SaveProfileColorAsync(string userLogin, string color);
+        Task SaveProfileColorAsync(string userLogin, string color);
 
-    Task<object> SignInAsync(string userName, string password);
+        Task<object> SignInAsync(string userName, string password);
+    }
 }
+

@@ -1,10 +1,12 @@
-﻿using LunarField.Abstractions.User;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using LunarField.Abstractions.User;
 using LunarField.Models.User;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LunarField.Controllers.User;
-
-public class UserController : Controller
+namespace LunarField.Controllers.User
+{
+    public class UserController : Controller
 {
     private readonly IUserService _userService;
     
@@ -87,3 +89,5 @@ public class UserController : Controller
         return RedirectToAction("Profile");
     }
 }
+}
+

@@ -1,10 +1,14 @@
-﻿namespace LunarField.Models.User;
+﻿using System;
 
-public class UserOutput
+namespace LunarField.Models.User
 {
-    public string UserLogin { get; set; }
+    public class UserOutput
+    {
+        public string UserLogin { get; set; }
 
-    public string FullName { get; set; }
+        public string FullName { get; set; }
 
-    public DateTime DateYear { get; set; }
+        public DateTime DateYear { get; set; }
+    }
 }
+

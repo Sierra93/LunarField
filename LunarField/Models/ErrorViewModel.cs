@@ -1,8 +1,10 @@
-namespace LunarField.Models;
-
-public class ErrorViewModel
+namespace LunarField.Models
 {
-    public string? RequestId { get; set; }
+    public class ErrorViewModel
+    {
+        public string? RequestId { get; set; }
 
-    public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    }
 }
+

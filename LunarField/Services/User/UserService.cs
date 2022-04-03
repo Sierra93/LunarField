@@ -1,10 +1,16 @@
-﻿using System.Data.SqlClient;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.IO;
+using System.Threading.Tasks;
 using LunarField.Abstractions.User;
 using LunarField.Models.User;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 
-namespace LunarField.Services.User;
-
-public class UserService : IUserService
+namespace LunarField.Services.User
+{
+    public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
     private readonly IConfiguration _configuration;
@@ -141,3 +147,5 @@ public class UserService : IUserService
         }
     }
 }
+}
+
