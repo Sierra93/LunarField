@@ -1,29 +1,12 @@
-using LunarField.Abstractions.User;
-using LunarField.Services.User;
+using Microsoft.AspNetCore;
 
-var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddControllersWithViews();
-builder.Services.AddTransient<IUserService, UserService>();
-builder.Services.AddTransient<IUserRepository, UserRepository>();
-
-var app = builder.Build();
-
-// if (!app.Environment.IsDevelopment())
-// {
-//     app.UseExceptionHandler("/Home/Error");
-//     app.UseHsts();
-// }
-app.UseDeveloperExceptionPage();
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.Run();
+namespace LunarField {
+    public class Program {
+        public static void Main(string[] args) {
+            CreateWebHostBuilder(args).Build().Run();
+        }
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>();
+    }
+}
