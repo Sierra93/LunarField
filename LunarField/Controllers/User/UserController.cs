@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using LunarField.Abstractions.User;
 using LunarField.Models.User;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LunarField.Controllers.User
@@ -33,13 +34,17 @@ namespace LunarField.Controllers.User
     public async Task<object> SignInAsync(UserInput userInput)
     {
         var result = await _userService.SignInAsync(userInput.UserLogin, userInput.UserPassword);
+        var name = result.GetType().GetProperty("UserLogin").GetValue(result).ToString();
+        
+        HttpContext.Session.SetString("userName", name);
 
         return result;
     }
 
-    public async Task<IActionResult> Profile()
+    [HttpGet]
+    public async Task<IActionResult> Profile(string userName)
     {
-        var result = await _userService.GetProfileDataAsync("test");
+        var result = await _userService.GetProfileDataAsync(userName ?? HttpContext.Session.GetString("userName"));
         
         return View(result);
     }

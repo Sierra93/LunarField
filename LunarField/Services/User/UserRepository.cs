@@ -28,13 +28,24 @@ namespace LunarField.Services.User
             var formatDate = dateYear.ToString().Split(" ").FirstOrDefault();
             var newDate = formatDate.Split(".").Reverse().ToList();
             var date = newDate[0] + "/" + newDate[1] + "/" + newDate[2];
-                       var query = "INSERT INTO dbo.Users" +
-                                   "(UserLogin, UserPassword, FirstName, LastName, SecondName, DateYear)" +
-                                   $"VALUES('{userName}', '{password}', '{firstName}', '{lastName}', '{secondName}', '{date}');";
+            var query = "INSERT INTO dbo.Users" +
+                        "(UserLogin, UserPassword, FirstName, LastName, SecondName, DateYear)" +
+                        $"VALUES('{userName}', '{password}', '{firstName}', '{lastName}', '{secondName}', '{date}');";
             var command = new SqlCommand(query, connection);
 
             await connection.OpenAsync();
             await command.ExecuteNonQueryAsync();
+            
+            var queryGetUserId = $"SELECT UserId FROM dbo.Users WHERE UserLogin = '{userName}'";
+            var commandGetUserId = new SqlCommand(queryGetUserId, connection);
+
+            // Найдет UserId пользователя.
+            var userId = await commandGetUserId.ExecuteScalarAsync();
+            
+            // Заведет портфолио новому пользователю.
+            var queryAddPortfolio = $"INSERT INTO dbo.UserPortfolio (UserId, ProjectName, ProjectPhoto, UserInfo, UserIcon, UserTitle, ProfilePhoto, ProfileColor) VALUES ({userId}, '', '', '', '', '', '', '')";
+            var commandAddPortfolio = new SqlCommand(queryAddPortfolio, connection);
+            await commandAddPortfolio.ExecuteScalarAsync();
 
             var result = new UserOutput
             {

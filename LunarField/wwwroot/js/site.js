@@ -36,7 +36,7 @@ function onCreateUser() {
 
 function getProfileData() {
     return $.ajax({
-        url: '/User/GetProfileData?userName=test',
+        url: '/User/GetProfileData?userName=' + localStorage["userLogin"],
         type: "GET",
         dataType: "json",
 
